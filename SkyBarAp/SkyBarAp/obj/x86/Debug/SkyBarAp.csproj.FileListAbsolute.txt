@@ -1,0 +1,15 @@
+C:\Users\mikiahidjo\Documents\Visual Studio 2010\Projects\SkyBarAp\SkyBarAp\bin\Debug\SkyBarAp.exe.config
+C:\Users\mikiahidjo\Documents\Visual Studio 2010\Projects\SkyBarAp\SkyBarAp\bin\Debug\SkyBarAp.exe
+C:\Users\mikiahidjo\Documents\Visual Studio 2010\Projects\SkyBarAp\SkyBarAp\bin\Debug\SkyBarAp.pdb
+C:\Users\mikiahidjo\Documents\Visual Studio 2010\Projects\SkyBarAp\SkyBarAp\obj\x86\Debug\SkyBarAp.csprojResolveAssemblyReference.cache
+C:\Users\mikiahidjo\Documents\Visual Studio 2010\Projects\SkyBarAp\SkyBarAp\obj\x86\Debug\SkyBarAp.HomePage.resources
+C:\Users\mikiahidjo\Documents\Visual Studio 2010\Projects\SkyBarAp\SkyBarAp\obj\x86\Debug\SkyBarAp.Management.resources
+C:\Users\mikiahidjo\Documents\Visual Studio 2010\Projects\SkyBarAp\SkyBarAp\obj\x86\Debug\SkyBarAp.ManagementForm.resources
+C:\Users\mikiahidjo\Documents\Visual Studio 2010\Projects\SkyBarAp\SkyBarAp\obj\x86\Debug\SkyBarAp.OrderForm.resources
+C:\Users\mikiahidjo\Documents\Visual Studio 2010\Projects\SkyBarAp\SkyBarAp\obj\x86\Debug\SkyBarAp.Properties.Resources.resources
+C:\Users\mikiahidjo\Documents\Visual Studio 2010\Projects\SkyBarAp\SkyBarAp\obj\x86\Debug\SkyBarAp.csproj.GenerateResource.Cache
+C:\Users\mikiahidjo\Documents\Visual Studio 2010\Projects\SkyBarAp\SkyBarAp\obj\x86\Debug\SkyBarAp.exe
+C:\Users\mikiahidjo\Documents\Visual Studio 2010\Projects\SkyBarAp\SkyBarAp\obj\x86\Debug\SkyBarAp.pdb
+C:\Users\martian\Desktop\flash\DOCS\PROJECT DOS300S\SkyBarAp\SkyBarAp\bin\Debug\SkyBarAp.exe.config
+C:\Users\martian\Desktop\flash\DOCS\PROJECT DOS300S\SkyBarAp\SkyBarAp\obj\x86\Debug\SkyBarAp.exe
+C:\Users\martian\Desktop\flash\DOCS\PROJECT DOS300S\SkyBarAp\SkyBarAp\obj\x86\Debug\SkyBarAp.pdb

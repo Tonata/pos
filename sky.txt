@@ -1,0 +1,145 @@
+
+CREATE TABLE manager
+( 
+  NAME VARCHAR2(20 BYTE) NOT NULL 
+, worker_id VARCHAR2(20 BYTE) NOT NULL 
+, CONSTRAINT NAME_Id_PK PRIMARY KEY 
+  ( NAME )
+  ENABLE);
+
+CREATE TABLE BARTENDER 
+(
+  BartenderId VARCHAR2(20 BYTE) NOT NULL,
+  Fullname VARCHAR2(20 BYTE) NOT NULL,
+  NAME VARCHAR2(20 BYTE) NOT NULL 
+, Password VARCHAR2(20 BYTE) NOT NULL 
+, CONSTRAINT BARTENDER_PK PRIMARY KEY 
+  (BartenderId )
+  ENABLE 
+);
+
+CREATE TABLE SUPPLIER 
+(
+  SUPPLIER_ID NUMBER(10, 0) NOT NULL 
+, SUPPLIER_NAME VARCHAR2(20 BYTE) NOT NULL 
+, TELEPHONE VARCHAR2(50 BYTE) NOT NULL 
+, ADDRESS VARCHAR2(50 BYTE) NOT NULL 
+, CONSTRAINT SUPPLIER_PK PRIMARY KEY 
+  (SUPPLIER_ID)
+  ENABLE 
+);
+
+CREATE TABLE ORDERLIST 
+(
+  ORDER_NUMBER NUMBER(10, 0) NOT NULL 
+, TOTAL_COST NUMBER(8, 2) NOT NULL 
+, ORDER_DATE DATE NOT NULL 
+, TOTAL_ITEMS NUMBER(10, 0) NOT NULL 
+, BARTENDER_ID VARCHAR2(20 BYTE) NOT NULL 
+, CONSTRAINT ORDERLIST_PK PRIMARY KEY 
+  (ORDER_NUMBER )
+  ENABLE);
+
+CREATE TABLE ITEM 
+(
+  ITEM_NUMBER NUMBER(10, 0) NOT NULL 
+, ITEM_NAME VARCHAR2(50 BYTE) NOT NULL 
+, UNIT_PRICE NUMBER(8, 2) NOT NULL 
+, QUANTITY NUMBER(4, 0) NOT NULL 
+, SUPPLIER_ID NUMBER(10, 0) NOT NULL 
+, PICTURE_NAME VARCHAR2(50 BYTE) NOT NULL 
+, CONSTRAINT ITEM_PK PRIMARY KEY 
+  (ITEM_NUMBER)
+  ENABLE 
+);
+
+CREATE TABLE ORDERLISTITEM 
+(
+  LISTITEM_NUMBER NUMBER(10, 0) NOT NULL 
+, ORDER_NUMBER NUMBER(10, 0) NOT NULL 
+, ITEM_NUMBER NUMBER(10, 0) NOT NULL 
+, QUANTITY NUMBER(4, 0) NOT NULL 
+, PRICE NUMBER(8, 2) NOT NULL 
+, TOTAL NUMBER(8, 2) NOT NULL 
+, CONSTRAINT ORDERLISTITEM_PK PRIMARY KEY 
+  (LISTITEM_NUMBER)
+  ENABLE 
+);
+INSERT INTO manager(NAME,worker_id) VALUES (10,'israel', 'christian','user1');
+INSERT INTO manager(adminid,fullname,NAME,password) VALUES (20,'tonata', 'mango','user2');
+
+INSERT INTO BARTENDER(NAME,worker_id)VALUES ('miki', 'bat1');
+INSERT INTO BARTENDER (NAME,worker_id) VALUES 'mango', 'bat2');
+
+INSERT INTO SUPPLIER(SUPPLIER_ID,SUPPLIER_NAME,TELEPHONE,ADDRESS,Email)
+VALUES('5', 'Ousman','(+27) 733 838 487', '152 monte Amiata,Parow','beni@gmail.com');
+
+INSERT INTO SUPPLIER(SUPPLIER_ID,SUPPLIER_NAME,TELEPHONE,ADDRESS,Email)
+VALUES('6', 'Kedhira','(+21)331 124 542','montelvo ,vasco','tonata@gmail.com');
+
+INSERT INTO SUPPLIER(SUPPLIER_ID,SUPPLIER_NAME,TELEPHONE,ADDRESS,Email)
+VALUES('7', 'samir','(+21)221 724 542','stand beach' ,'mikiahidjo@yahoo.fr');
+
+INSERT INTO SUPPLIER(SUPPLIER_ID,SUPPLIER_NAME,TELEPHONE,ADDRESS,Email)
+VALUES('8', 'djimi','(+21)221 624 812','newPort Beach' ,'djimi@cput.co.za');
+
+INSERT INTO SUPPLIER(SUPPLIER_ID,SUPPLIER_NAME,TELEPHONE,ADDRESS)
+VALUES('104', 'Modric','(+21) 431 624 123','187,goodwood');
+
+insert into item (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (1, '4th Street Natural Sweet Red' , 23.90, 5 , 102, '4thStreet_Red.jpg' );
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (2 , 'Four Cousins Natural Sweet Red' , 30.00, 19,102 'Fourcousin_Red.jpg');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (3 , 'Four Cousins Dry Red' ,31.00, 8, 103 ,  'Fourcousins_dry.jpg');
+
+insert into item (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (4 , 'Nederburg Dry Red' , 35.95, 40 ,102, 'Nederburg_Red.jpg');
+
+insert into item (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (5 , 'Nederburg Dry White' ,35.95, 3,104 ,  'Nederburg_White.jpg');
+
+insert into item (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values(6 , 'Johnnie Walker - Black Label' ,  290.00, 5,103 , 'Johnnie_Walker.jpg');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (7, 'Jim Beam' , 400.90, 19,104,  'Jim_Beam.jpg');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (8 , 'Jameson Whiskey' , 395.99, 5  , 102, 'jameson-whiskey.jpg');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (9 , 'Jack Daniels' , 230.00, 40,103,   'jack_daniels.jpg');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (10 , 'ZYR Vodka', 400.60, 20 , 104, 'zyr_vodka.jpg');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values(11 , 'Skyy Vodka' , 300.95, 30, 103 , 'skyy_vodka.png');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (12 , 'Smirnoff Vodka' , 350.90, 19, 103  , 'smirnoff-vodka.jpg');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (13, 'Absolute Vodka' ,  400.35, 25,103, 'Absolute_Vodka.jpg');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (14 , 'Windhoek Lager' , 10.95, 20,104 ,'windhoek_lager.jpg');
+
+insert into item (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (15 , 'Windhoek Draught'  , 11.95, 80,102 ,'windhoek-draught.jpg');
+
+insert into item (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (16 , 'Black Label' , 10.95, 70, 103,'Black_Label.jpg' );
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (17 , 'Castle Lager' , 9.95, 70,104, 'Castle_Lager.jpg');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (18 , 'Heineken' , 12.00 , 50,104, 'heineken.jpg');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (19, 'Savannah Dry' , 15.95, 50,103, 'savanah_dry.jpg');
+
+insert into item (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (20 , 'Hunters Dry', 15.95, 50,103, 'Hunters-Dry.png');
+
+insert into item (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (21 , 'Hunters Gold'  , 16.00, 50,102 ,'Hunters_gold.png');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (22 , 'Coke' ,  10.00, 79 ,103, 'coke.jpg');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (23 , 'Schweppes Lemonade'  , 10.00, 8 ,104, 'schweppes-lemonade.jpg');
+
+insert into item (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (24 , 'Schweppes Soda Water' , 10.00, 40,104 , 'Schweppes-Soda-Water.jpg');
+
+insert into item (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (25 , 'Schweppes Tonic Water' , 10.00, 50 ,102, 'tonic_water.jpg');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (26 , 'Sprite' ,  11.00, 41,102,'Sprite.png');
+
+insert into item (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (27 , 'Stoney' , 10.00, 19,103, 'stoney.jpg');
+
+insert into item  (item_number, item_name, unit_price, quantity , supplier_id, picture_name) values (28 , 'Lemon Twist' , 10.00 , 30 ,104, 'lemon-twist.jpg');
+
+commit;
